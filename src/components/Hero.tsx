@@ -54,12 +54,32 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-gray-200 mb-4 leading-relaxed"
             >
-              Especialistas em carnes, chocolates e cargas sensíveis. 
-              Sua carga no destino com <span className="font-semibold text-white">temperatura controlada</span> e 
+              Especialistas em transportes de <span className="font-semibold text-white">perecíveis</span>, 
+              <span className="font-semibold text-white"> frigorificados e resfriados</span>. 
+              Transporte de cargas diretas fechadas com <span className="font-semibold text-white">temperatura controlada</span> e 
               <span className="font-semibold text-white"> segurança total</span>.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mb-8"
+            >
+              <p className="text-sm text-gray-300 mb-2 font-semibold uppercase tracking-wide">Frota Disponível:</p>
+              <div className="flex flex-wrap gap-2">
+                {['Carreta Frigorífica', 'Bi-Truck', 'Truck', 'Toco', '3/4'].map((veiculo, index) => (
+                  <span 
+                    key={index}
+                    className="bg-white/10 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-sm font-medium border border-white/20"
+                  >
+                    {veiculo}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
