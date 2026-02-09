@@ -102,8 +102,8 @@ export const Footer = () => {
                 <Mail size={18} className="shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-white">E-mail</p>
-                  <a href="mailto:contato@fretepago.com.br" className="hover:text-white transition-colors">
-                    contato@fretepago.com.br
+                  <a href="mailto:mc.martinslog@gmail.com" className="hover:text-white transition-colors">
+                    mc.martinslog@gmail.com
                   </a>
                 </div>
               </li>
